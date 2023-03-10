@@ -6,10 +6,10 @@ import { IUser, IUserActionType } from "../store/reducer/user";
 import { StoreType } from "../store/store";
 
 interface IProps {
-    admin?: IAdmin
-    user?: IUser
-    changeAdminName?: () => void
-    changeUserName?: () => void
+    admin?: IAdmin                      // 由于在App组件调用的时候，没有显示传递admin属性，因此需要加上?
+    user?: IUser                        // 由于在App组件调用的时候，没有显示传递admin属性，因此需要加上?
+    changeAdminName?: () => void        // 由于在App组件调用的时候，没有显示传递admin属性，因此需要加上?
+    changeUserName?: () => void         // 由于在App组件调用的时候，没有显示传递admin属性，因此需要加上?
 }
 
 
